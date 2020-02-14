@@ -1,0 +1,237 @@
+<html>
+  	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>
+		  Diabetes Lifestyle Coach - Main
+		</title>
+		
+		<script type="text/javascript">
+			function f() {
+	    		document.getElementsByClassName('dropdown')[0].classList.toggle('down');
+	    		document.getElementsByClassName('arrow')[0].classList.toggle('gone');
+	    		if (document.getElementsByClassName('dropdown')[0].classList.contains('down')) {
+	    		    setTimeout(function() {
+	    		        document.getElementsByClassName('dropdown')[0].style.overflow = 'visible';
+	    		    }, 500)
+	    		} else {
+	    		    document.getElementsByClassName('dropdown')[0].style.overflow = 'hidden';
+	    		}
+			}
+		</script>
+    </head>
+  	<body>
+  		<style>
+.menu {
+    width: 200px;
+    margin: 0 548px 0;
+    cursor: pointer;
+    position: absolute;
+    z-index:999;
+}
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 14px;
+    border-radius: 4px;
+    position: relative;
+}
+.title:hover {
+    box-shadow: 0 0 40px -10px #000;
+    background: coral;
+    color: rgba(255, 255, 255, 1);
+}
+span {
+    float: right;
+    font-size: 18px!important
+}
+.dropdown {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 40px -10px #000;
+    color: #505050;
+    margin-top: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s
+}
+.down {
+    max-height: 320px
+}
+.arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    right: 20px;
+    bottom: -24px;
+    display: none
+}
+.arrow.gone {
+    display: block
+}
+.select {
+    padding: 15px 14px;
+    margin: 0;
+    transition: all .1s
+}
+.select:hover {
+    background: coral;
+    -webkit-transform: scale(1.05);
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 30px -10px #000
+}
+.inner_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #FFFFFF;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #FFFFFF;
+	box-shadow:inset 0px 1px 0px 0px #FFFFFF;
+	background-color:#FFFFFF;
+	-webkit-border-top-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+	-moz-border-radius-topright:8px;
+	border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright:8px;
+	border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-bottom-left-radius:8px;
+	text-indent:0;
+	border:2px solid white;
+        padding: 5px 10px;
+	display:block;
+        margin:auto;
+	color:#000000; /* Font color */
+	font-family:arial;
+	font-size: 15px;
+	font-weight:strong;
+	font-style:normal;
+	height:42px;
+	line-height:16px;
+	width:150px;
+	text-decoration:none;
+	  font-size: 42px;
+        text-align : center;
+	text-shadow:none;
+	word-wrap:break-word;
+	vertical-align:middle;
+}
+
+
+.inner_button:active {
+	position:relative;
+	top:1px;
+}
+
+.outer_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #FFFFFF;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #FFFFFF;
+	box-shadow:inset 0px 1px 0px 0px #FFFFFF;
+	background-color:#FFFFFF;
+	-webkit-border-top-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+	-moz-border-radius-topright:8px;
+	border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright:8px;
+	border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-bottom-left-radius:8px;
+	text-indent:0;
+	border:2px solid white;
+        padding: none;
+	display:block;
+        margin:auto;
+	color:#000000; /* Font color */
+	font-family:arial;
+	font-size: 15px;
+	font-weight:strong;
+	font-style:normal;
+	height:12px;
+	line-height:16px;
+	width:250px;
+	text-decoration:none;
+	  font-size: 22px;
+        text-align : center;
+	text-shadow:none;
+	word-wrap:none;
+	vertical-align:middle;
+}
+</style>
+
+<table border="3" width="40%" height="auto" align="center" style="height: 576px;">
+<tbody>
+<tr style="height: 554px;">
+<td style="height: 554px; vertical-align: top; text-align: center;">
+
+<!--<details>
+    <summary><img width="20" height="20" class="avatar" alt="@Alapocas" src="https://avatars0.githubusercontent.com/u/48612067?s=40&amp;v=4">这是摘要1</summary>
+    <details-menu>
+    	<p>这里具体描述，标签相对随意，例如这里使用的&lt;p&gt;标签。</p>
+    	<p>afgfgdsfgfdsgfdsgfdsgfdsg</p>
+    </details-menu>
+</details>-->
+
+<div class="menu">
+    <div class="title" onclick="f()"> <img width="40" height="40" class="avatar" alt="@Alapocas" src="https://avatars0.githubusercontent.com/u/48612067?s=40&amp;v=4"> Jennifer <span class="fa fa-bars"></span>
+        <div class="arrow"></div>
+    </div>
+    <div class="dropdown">
+        <p class="select" onclick="window.location.href = '/profileJ'">VIEW PROFILE <span class="fa fa-inbox"></span>
+        </p>
+        <p class="select" onclick="window.location.href = '/dietaryPrefJ'">DIETARY PREFERENCES <span class="fa fa-gear"></span>
+        </p>
+        <p class="select" onclick="window.location.href = '/foodHistSummaryJ'">FOODHISTORY SUMMARY <span class="fa fa-sign-out"></span>
+        </p>
+        <p class="select" onclick="window.location.href = '/recommendationsJ'">RECOMMENDATIONSY <span class="fa fa-sign-out"></span>
+        </p>
+        <p class="select" onclick="window.location.href = '/change_persona'">CHANGE PERSONA <span class="fa fa-sign-out"></span>
+        </p>
+        <p class="select" onclick="window.location.href = '/main'">LOG OUT <span class="fa fa-sign-out"></span>
+        </p>
+    </div>
+</div>
+
+<!--<a href="/settingB">
+  <img src="http://www.drodd.com/images15/letter-b25.jpg" alt="User Settings - Bob" style="width:20px;height:20px;border:0"; align="right">
+</a>-->
+
+<div style="width: 0px; height: 100px; overflow: hidden;"> </div>
+
+<div class="left_button_cell">
+<p style="text-align: center;"><img alt="" src="https://d92mrp7hetgfk.cloudfront.net/images/sites/misc/rensselaerpolytechnici-1/standard.png?1548463664" style="width: 140px; height: 54px;" />
+</p>
+
+<p style="text-align: center;"></p>
+<p style="text-align: center;"></p>
+<p style="text-align: center;"></p>
+<p style="text-align: center;"></p>
+
+
+<div class="left_button_cell">
+        <a class="inner_button" onclick="window.location.href = '/adviceJ';">HEALS</a>
+       <a class="outer_button"; font-size: 12px;>Diabetes Lifestyle Coach</a>
+</div>
+
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><i>Supported by</i></p>
+
+<p style="text-align: center;"><img alt="" src="http://www.dataversity.net/wp-content/uploads/2011/05/IBM-logo-Big-Blue.jpg" style="width: 100px; height: 60px;" /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
